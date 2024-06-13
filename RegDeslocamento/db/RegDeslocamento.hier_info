@@ -1,0 +1,27 @@
+|RegDeslocamento
+clock => fio_data[0].CLK
+clock => fio_data[1].CLK
+clock => fio_data[2].CLK
+clock => fio_data[3].CLK
+reset => fio_data[0].ACLR
+reset => fio_data[1].ACLR
+reset => fio_data[2].ACLR
+reset => fio_data[3].ACLR
+load => fio_data.OUTPUTSELECT
+load => fio_data.OUTPUTSELECT
+load => fio_data.OUTPUTSELECT
+load => fio_data.OUTPUTSELECT
+shift => fio_data.OUTPUTSELECT
+shift => fio_data.OUTPUTSELECT
+shift => fio_data.OUTPUTSELECT
+shift => fio_data.OUTPUTSELECT
+D[0] => fio_data.DATAB
+D[1] => fio_data.DATAB
+D[2] => fio_data.DATAB
+D[3] => fio_data.DATAB
+Q[0] <= fio_data[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= fio_data[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= fio_data[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= fio_data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

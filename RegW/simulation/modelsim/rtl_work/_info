@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\RegW\simulation\modelsim
+Eregw
+Z1 w1718237764
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\RegW\simulation\modelsim
+Z5 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/RegW.vhd
+Z6 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/RegW.vhd
+l0
+L4
+Ve0;Nd?L?E>d1o`0ZUhF063
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1718239341.710000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/RegW.vhd|
+Z10 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/RegW.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 8C^KTWNCR:L3aNCco;4Nd2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 4 regw 0 22 e0;Nd?L?E>d1o`0ZUhF063
+l21
+L19
+VOP^Af6=dHP]kgUP2gRdb_2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ZL0LfC:ZeINkg<3NAaoe[2
+!i10b 1
+Etb_regw
+Z13 w1718237753
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/Tb_RegW.vhd
+Z16 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/Tb_RegW.vhd
+l0
+L5
+VZTXm4<L4W`lAQle9>6l2P1
+!s100 a0G^c^V6]BE=<6zU=FJm80
+R7
+31
+!i10b 1
+Z17 !s108 1718239341.809000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/Tb_RegW.vhd|
+Z19 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/RegW/Tb_RegW.vhd|
+R11
+R12
+Abehavior
+R14
+R2
+R3
+DEx4 work 7 tb_regw 0 22 ZTXm4<L4W`lAQle9>6l2P1
+l34
+L8
+Va`AOO27C9@Z06^GI5WW:a0
+!s100 EKaHFV>JgnA=N1Lf3954[1
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12
