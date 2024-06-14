@@ -1,5 +1,0 @@
-set tool_name "ModelSim-Altera (VHDL)"
-set corner_file_list {
-	{{"Slow Model"} {RegDeslocamento.vho RegDeslocamento_vhd.sdo}}
-	{{"Fast Model"} {RegDeslocamento_fast.vho RegDeslocamento_vhd_fast.sdo}}
-}

@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\Deco_3bits\simulation\modelsim
+Edeco_3bits
+Z1 w1718332749
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\Deco_3bits\simulation\modelsim
+Z5 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl
+Z6 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl
+l0
+L4
+Vk<K;^D_F^Ok3;XAcje^@V2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1718332926.658000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl|
+Z10 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 4O4GgJZ>mKfoVKQN_=ML>1
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 10 deco_3bits 0 22 k<K;^D_F^Ok3;XAcje^@V2
+l12
+L11
+V@jAbP99c]MMX7<38X]?3H1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ZOd?ZASDY;W0R`UOAh^Ce3
+!i10b 1
+Etb_deco_3bits
+Z13 w1718332781
+R2
+R3
+R4
+Z14 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl
+Z15 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl
+l0
+L4
+VE?FOUeID?L>9ALfj3hGE13
+!s100 m<YOdHjMoSJmJ>PN8<ISe1
+R7
+31
+!i10b 1
+Z16 !s108 1718332926.736000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl|
+Z18 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl|
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 13 tb_deco_3bits 0 22 E?FOUeID?L>9ALfj3hGE13
+l21
+L7
+V=>[;XW9DB0i17DO@_E;Q=3
+!s100 dPZfPAM31<[f`;U^`VV3G1
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
