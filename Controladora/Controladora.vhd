@@ -26,7 +26,7 @@ entity Controladora is
     );
 end Controladora;
 
-
+--- Precisa-se alterar 
 architecture arch of controladora is
 
 	type estado is (S0, S1, S2, S3, S4);
