@@ -1,0 +1,20 @@
+|BCD_7seg
+entrada[0] => Mux0.IN5
+entrada[0] => Mux1.IN5
+entrada[0] => Mux2.IN5
+entrada[0] => Mux3.IN5
+entrada[0] => saida[2].DATAIN
+entrada[1] => Mux0.IN4
+entrada[1] => Mux1.IN4
+entrada[1] => Mux2.IN4
+entrada[1] => Mux3.IN4
+entrada[1] => saida[0].DATAIN
+saida[0] <= entrada[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= entrada[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= <VCC>
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

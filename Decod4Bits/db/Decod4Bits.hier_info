@@ -1,0 +1,13 @@
+|Decod4Bits
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+saida[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

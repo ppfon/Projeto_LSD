@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\maria\OneDrive\Documentos\MMS\Maria\Github\Projeto_LSD\BCD_7seg\simulation\modelsim
+Ebcd_7seg
+Z1 w1718277623
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\maria\OneDrive\Documentos\MMS\Maria\Github\Projeto_LSD\BCD_7seg\simulation\modelsim
+Z5 8C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/BCD_7seg.vhd
+Z6 FC:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/BCD_7seg.vhd
+l0
+L9
+V4MmH`XNCUM4YJ:Jz4N>CL2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1718295861.217000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/BCD_7seg.vhd|
+Z10 !s107 C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/BCD_7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 8VBCTdfokhYDfXVHK?^dK1
+!i10b 1
+Awith_select_bcd7seg
+R2
+R3
+DEx4 work 8 bcd_7seg 0 22 4MmH`XNCUM4YJ:Jz4N>CL2
+l17
+L16
+VK3gdozXZXdGGfD8U:FKOl2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 TBz^:W9A7kkdb3MNHa3ER3
+!i10b 1
+Etb_bcd_7seg
+Z13 w1718295821
+R2
+R3
+R4
+Z14 8C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/Tb_BCD_7seg.vhd
+Z15 FC:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/Tb_BCD_7seg.vhd
+l0
+L4
+V4BFmgn<:84zZ1dj@nRR3]2
+!s100 BAJ=7U]OfLEo_VVG>lo7[1
+R7
+31
+!i10b 1
+Z16 !s108 1718295861.361000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/Tb_BCD_7seg.vhd|
+Z18 !s107 C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/BCD_7seg/Tb_BCD_7seg.vhd|
+R11
+R12
+Ateste
+R2
+R3
+DEx4 work 11 tb_bcd_7seg 0 22 4BFmgn<:84zZ1dj@nRR3]2
+l23
+L7
+VIaYm7M5gOJIPR?IAFD]T`0
+!s100 K1BHhzH5`gO[<de:nUD]I1
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12

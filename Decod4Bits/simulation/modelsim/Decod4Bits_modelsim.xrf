@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Decod4Bits/Decod4Bits.vhd
+source_file = 1, C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Decod4Bits/db/Decod4Bits.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Decod4Bits
+instance = comp, \entrada[1]~I\, entrada[1], Decod4Bits, 1
+instance = comp, \entrada[0]~I\, entrada[0], Decod4Bits, 1
+instance = comp, \entrada[3]~I\, entrada[3], Decod4Bits, 1
+instance = comp, \entrada[2]~I\, entrada[2], Decod4Bits, 1
+instance = comp, \Mux1~0\, Mux1~0, Decod4Bits, 1
+instance = comp, \Mux0~0\, Mux0~0, Decod4Bits, 1
+instance = comp, \saida[0]~I\, saida[0], Decod4Bits, 1
+instance = comp, \saida[1]~I\, saida[1], Decod4Bits, 1
