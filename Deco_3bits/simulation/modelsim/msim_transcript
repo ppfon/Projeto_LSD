@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl}
+# vcom -93 -work work {C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,7 +18,7 @@
 # -- Compiling entity Deco_3bits
 # -- Compiling architecture Behavioral of Deco_3bits
 # 
-# vcom -93 -work work {C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl}
+# vcom -93 -work work {C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Deco_3bits/tb_Deco_3bits.vhdl}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
