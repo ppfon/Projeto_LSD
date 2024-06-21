@@ -10,14 +10,14 @@ architecture teste of Tb_BCD_7seg is
 	component BCD_7seg is
 
    port (
-		entrada: in std_logic_vector (1 downto 0);
+		entrada: in std_logic_vector (2 downto 0);
 		saida:	out std_logic_vector (6 downto 0)
 	);
 
 	end component;
 
 	-- Declaração dos "fios" internos necessários para injetar no componente os estímulos de simulação:
-	signal fio_entrada: std_logic_vector(1 downto 0);
+	signal fio_entrada: std_logic_vector(2 downto 0);
 	signal fio_saida: std_logic_vector (6 downto 0);
  
 begin
@@ -28,7 +28,7 @@ begin
 		-- As próximas linhas criam os estímulos da simulação,
 		-- A letra x"0" indica que os valores a seguir estão expressos em base hexadecimal
 		
-		fio_entrada <= "00", "01" after 2 ns, "10" after 4 ns, "11" after 6 ns;
+		fio_entrada <= "001", "010" after 2 ns, "011" after 4 ns, "100" after 6 ns;
 		
 end teste;
 
