@@ -1,0 +1,123 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY Controladora IS
+
+	PORT {
+	clock, reset, flag_presenca, desejado_igual_0 : IN STD_LOGIC;
+	andar_desejado : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+	comp_desejado_posicao : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+
+	aciona_alarme, load_andar_desejado, parado : OUT STD_LOGIC;
+	ordem_leds : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+	};
+END Controladora;
+
+ARCHITECTURE arch OF Controladora IS
+
+	TYPE estado IS (S0, S1, S2, S3, S4, S5);
+	SIGNAL estado_atual, proximo_estado : estado;
+
+BEGIN
+	sequencial :
+	PROCESS (reset, clock) IS
+	BEGIN
+		IF (RESET = '1') THEN
+			estado_atual <= S0;
+		ELSIF (rising_edge(CLOCK)) THEN
+			estado_atual <= proximo_estado;
+		END IF;
+	END PROCESS;
+
+	combinacional :
+	PROCESS (flag_presenca, desejado_igual_0, andar_desejado, comp_desejado_posicao, estado_atual) IS
+	BEGIN
+		--- Inicializando as variáveis
+		flag_presenca <= '0';
+		desejado_igual_0 <= '0';
+		andar_desejado <= '0';
+		comp_desejado_posicao <= '0';
+
+		CASE estado_atual IS
+			WHEN S0 => -- Térreo
+				ordem_leds <= "100";
+				aciona_alarme <= '0';
+				load_andar_desejado <= '1';
+				parado <= '1';
+
+				IF (desejado_igual_0 = '0') THEN
+					proximo_estado <= S1;
+				ELSE
+					proximo_estado <= S0;
+				end if;
+
+			WHEN S1 => -- Iniciando subindo 
+					ordem_leds <= '0' & andar_desejado;
+					aciona_alarme <= '0';
+					load_andar_desejado <= '0';
+					parado <= '1';
+
+				IF (flag_presenca = '0') THEN
+					proximo_estado <= S2;
+				ELSE
+					proximo_estado <= S1;
+				end if;
+
+			WHEN S2 => --  Subindo
+					ordem_leds <= '0' & andar_desejado;
+					aciona_alarme <= '0';
+					load_andar_desejado <= '0';
+					parado <= '0';
+
+				IF (comp_desejado_posicao = "010" AND flag_presenca = '0') THEN
+					proximo_estado <= S3;
+				ELSIF (comp_desejado_posicao = "100") THEN
+					proximo_estado <= S2;
+				ELSE
+					proximo_estado <= S2;
+				end if;
+			
+			WHEN S3 => -- Parado (andar desejado)
+					ordem_leds <= "100";
+					aciona_alarme <= '0';
+					load_andar_desejado <= '1';
+					parado <= '1';
+
+				IF (desejado_igual_0 = '1') THEN
+					proximo_estado <= S3;
+				ELSIF (comp_desejado_posicao = "100" AND desejado_igual_0 = '0') THEN
+					proximo_estado <= S1;
+				ELSIF (comp_desejado_posicao = "001" AND desejado_igual_0 = '0') THEN
+					proximo_estado <= S4;
+				ELSE
+					proximo_estado <= S3;
+				end if;
+
+			WHEN S4 => -- Iniciando descendo
+				ordem_leds <= '0' & andar_desejado;
+				aciona_alarme <= '0';
+				load_andar_desejado <= '0';
+				parado <= '0';
+			
+			if (flag_presenca = '1') then
+				proximo_estado <= S4;
+			else
+				proximo_estado <= S5;
+			end if;
+			
+			WHEN S5 => -- Descendo
+				ordem_leds <= '0' & andar_desejado;
+				aciona_alarme <= '0';
+				load_andar_desejado <= '0';
+				parado <= '0';
+			
+			if (comp_desejado_posicao = "010" AND flag_presenca = '0') then
+				proximo_estado <= S3;
+			elsif (comp_desejado_posicao = "001") then
+				proximo_estado <= S5;
+			else 
+				proximo_estado <= S5;
+			end if;
+		END CASE;
+	END PROCESS;
+END arch;

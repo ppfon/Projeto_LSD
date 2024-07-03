@@ -1,0 +1,73 @@
+|Sinalizadora_controle
+reset => Controladora_alarme:instancia_controladora_alarme.reset
+reset => Controladora:instancia_controladora.reset
+clock => Controladora_alarme:instancia_controladora_alarme.clock
+clock => Controladora:instancia_controladora.clock
+flag_falha => Controladora_alarme:instancia_controladora_alarme.flag_falha
+botao_emergencia => Controladora_alarme:instancia_controladora_alarme.botao_emergencia
+flag_peso => Controladora_alarme:instancia_controladora_alarme.flag_peso
+flag_presenca => Controladora:instancia_controladora.flag_presenca
+desejado_igual_0 => Controladora:instancia_controladora.desejado_igual_0
+estado_emergencia => ~NO_FANOUT~
+andar_desejado[0] => Controladora:instancia_controladora.andar_desejado[0]
+andar_desejado[1] => Controladora:instancia_controladora.andar_desejado[1]
+comp_desejado_posicao[0] => Controladora:instancia_controladora.comp_desejado_posicao[0]
+comp_desejado_posicao[1] => Controladora:instancia_controladora.comp_desejado_posicao[1]
+comp_desejado_posicao[2] => Controladora:instancia_controladora.comp_desejado_posicao[2]
+aciona_alarme <= Controladora_alarme:instancia_controladora_alarme.alarme_acionado
+load_andar_desejado <= Controladora:instancia_controladora.load_andar_desejado
+parado <= Controladora:instancia_controladora.parado
+ordem_leds[0] <= Controladora:instancia_controladora.ordem_leds[0]
+ordem_leds[1] <= Controladora:instancia_controladora.ordem_leds[1]
+ordem_leds[2] <= Controladora:instancia_controladora.ordem_leds[2]
+
+
+|Sinalizadora_controle|Controladora_alarme:instancia_controladora_alarme
+clock => estado_atual.CLK
+reset => estado_atual.ACLR
+flag_falha => combinacional.IN0
+flag_falha => combinacional.IN0
+botao_emergencia => combinacional.IN1
+botao_emergencia => combinacional.IN1
+flag_peso => combinacional.IN1
+flag_peso => combinacional.IN1
+alarme_acionado <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+estado_emergencia <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sinalizadora_controle|Controladora:instancia_controladora
+clock => estado_atual~1.DATAIN
+reset => estado_atual~3.DATAIN
+flag_presenca => combinacional.IN0
+flag_presenca => combinacional.IN0
+flag_presenca => combinacional.IN1
+desejado_igual_0 => proximo_estado.OUTPUTSELECT
+desejado_igual_0 => proximo_estado.OUTPUTSELECT
+desejado_igual_0 => proximo_estado.OUTPUTSELECT
+desejado_igual_0 => combinacional.IN0
+desejado_igual_0 => combinacional.IN1
+desejado_igual_0 => combinacional.IN1
+estado_emergencia => combinacional.IN1
+estado_emergencia => combinacional.IN1
+estado_emergencia => combinacional.IN1
+estado_emergencia => combinacional.IN1
+estado_emergencia => combinacional.IN1
+estado_emergencia => combinacional.IN1
+andar_desejado[0] => ordem_leds.DATAA
+andar_desejado[1] => ordem_leds.DATAA
+comp_desejado_posicao[0] => Equal0.IN1
+comp_desejado_posicao[0] => Equal1.IN1
+comp_desejado_posicao[0] => Equal2.IN2
+comp_desejado_posicao[1] => Equal0.IN2
+comp_desejado_posicao[1] => Equal1.IN0
+comp_desejado_posicao[1] => Equal2.IN1
+comp_desejado_posicao[2] => Equal0.IN0
+comp_desejado_posicao[2] => Equal1.IN2
+comp_desejado_posicao[2] => Equal2.IN0
+load_andar_desejado <= load_andar_desejado.DB_MAX_OUTPUT_PORT_TYPE
+parado <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+ordem_leds[0] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
+ordem_leds[1] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
+ordem_leds[2] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
+
+

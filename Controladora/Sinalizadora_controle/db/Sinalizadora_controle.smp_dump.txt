@@ -1,0 +1,9 @@
+
+State Machine - |Sinalizadora_controle|Controladora:instancia_controladora|estado_atual
+Name estado_atual.descendo estado_atual.inicia_descendo estado_atual.parado_andar estado_atual.subindo estado_atual.inicia_subindo estado_atual.terreo 
+estado_atual.terreo 0 0 0 0 0 0 
+estado_atual.inicia_subindo 0 0 0 0 1 1 
+estado_atual.subindo 0 0 0 1 0 1 
+estado_atual.parado_andar 0 0 1 0 0 1 
+estado_atual.inicia_descendo 0 1 0 0 0 1 
+estado_atual.descendo 1 0 0 0 0 1 

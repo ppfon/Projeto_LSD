@@ -1,0 +1,13 @@
+|controladora_alarme
+clock => estado_atual.CLK
+reset => estado_atual.ACLR
+flag_falha => combinacional.IN0
+flag_falha => combinacional.IN0
+botao_emergencia => combinacional.IN1
+botao_emergencia => combinacional.IN1
+flag_peso => combinacional.IN1
+flag_peso => combinacional.IN1
+alarme_acionado <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+estado_emergencia <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+
+

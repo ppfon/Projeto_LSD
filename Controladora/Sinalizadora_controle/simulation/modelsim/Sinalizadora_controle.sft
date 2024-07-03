@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {Sinalizadora_controle.vho Sinalizadora_controle_vhd.sdo}}
+	{{"Fast Model"} {Sinalizadora_controle_fast.vho Sinalizadora_controle_vhd_fast.sdo}}
+}
