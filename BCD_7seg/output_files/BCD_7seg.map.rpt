@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BCD_7seg
-Thu Jun 13 13:23:46 2024
+Wed Jun 19 23:00:41 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 13 13:23:46 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 19 23:00:41 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; BCD_7seg                                        ;
 ; Top-level Entity Name              ; Bcd_7seg                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 3                                               ;
-;     Total combinational functions  ; 3                                               ;
+; Total logic elements               ; 6                                               ;
+;     Total combinational functions  ; 6                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 9                                               ;
+; Total pins                         ; 10                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -168,28 +168,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 3          ;
+; Estimated Total logic elements              ; 6          ;
 ;                                             ;            ;
-; Total combinational functions               ; 3          ;
+; Total combinational functions               ; 6          ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 3          ;
+;     -- 3 input functions                    ; 5          ;
+;     -- <=2 input functions                  ; 1          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 3          ;
+;     -- normal mode                          ; 6          ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 9          ;
+; I/O pins                                    ; 10         ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
-; Maximum fan-out node                        ; entrada[1] ;
-; Maximum fan-out                             ; 4          ;
-; Total fan-out                               ; 12         ;
-; Average fan-out                             ; 1.00       ;
+; Maximum fan-out node                        ; entrada[2] ;
+; Maximum fan-out                             ; 6          ;
+; Total fan-out                               ; 24         ;
+; Average fan-out                             ; 1.50       ;
 +---------------------------------------------+------------+
 
 
@@ -198,7 +198,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Bcd_7seg                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |Bcd_7seg           ; work         ;
+; |Bcd_7seg                  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |Bcd_7seg           ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,25 +233,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jun 13 13:23:44 2024
+    Info: Processing started: Wed Jun 19 23:00:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BCD_7seg -c BCD_7seg
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7seg.vhd
     Info (12022): Found design unit 1: Bcd_7seg-with_select_bcd7seg
     Info (12023): Found entity 1: Bcd_7seg
 Info (12127): Elaborating entity "BCD_7seg" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "saida[5]" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 3 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Thu Jun 13 13:23:46 2024
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 6 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Wed Jun 19 23:00:41 2024
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

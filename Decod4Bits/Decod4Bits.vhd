@@ -23,7 +23,11 @@ end with_select_BCD;
 		 
 -- saída: (00 = parado) ; (01 = subindo) ; (10 = descendo)
 -- bit(3) -> pino_parado (0 = parado ; 1 = movimento)
--- bit(2) -> maior (0 = menor/igual ; 1 = maior)
+-- bit(2) -> menor (0 = maior/igual ; 1 = menor)
 -- bit(1) -> igual (0 = maior/igual ; 1 = igual)
--- bit(0) -> menor (0 = maior/igual ; 1 = menor
+-- bit(0) -> maior (0 = maior/igual ; 1 = menor)
+
+-- 100 -> menor = subindo
+-- 010 -> igual = parado
+-- 001 -> maior = descendo
 				

@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\maria\OneDrive\Documentos\MMS\Maria\Github\Projeto_LSD\Comp3Bits\simulation\modelsim
+Ecomp3bits
+Z1 w1718837047
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\maria\OneDrive\Documentos\MMS\Maria\Github\Projeto_LSD\Comp3Bits\simulation\modelsim
+Z6 8C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Comp3Bits.vhd
+Z7 FC:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Comp3Bits.vhd
+l0
+L8
+V31;h4jXJd<SDTlnlkWJEC1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1718837709.059000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Comp3Bits.vhd|
+Z11 !s107 C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Comp3Bits.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 ;mj1FFWo5<OIL2KgML1S;0
+!i10b 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 9 comp3bits 0 22 31;h4jXJd<SDTlnlkWJEC1
+l19
+L18
+Vhnk[X?ZgeNMHa<Tb>[Je;2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 jC1FN[]?zo@0ZTP1ZGaa60
+!i10b 1
+Etb_comp3bits
+Z14 w1718837695
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R3
+R4
+R5
+Z16 8C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Tb_Comp3Bits.vhd
+Z17 FC:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Tb_Comp3Bits.vhd
+l0
+L5
+Vdi@:]0cahXNDTBHPGokko1
+!s100 B0R6[z[<F4BlW`@O_KhBZ3
+R8
+31
+!i10b 1
+Z18 !s108 1718837709.145000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Tb_Comp3Bits.vhd|
+Z20 !s107 C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Comp3Bits/Tb_Comp3Bits.vhd|
+R12
+R13
+Ateste
+R15
+R3
+R4
+DEx4 work 12 tb_comp3bits 0 22 di@:]0cahXNDTBHPGokko1
+l23
+L8
+VEX1_DElQR98e@[eh5Wm__0
+!s100 iVl]kmD0lF0M;Bb24ddYl2
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13

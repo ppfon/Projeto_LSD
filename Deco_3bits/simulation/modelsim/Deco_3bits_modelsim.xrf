@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl
-source_file = 1, C:/Users/unknow/Documents/GitHub/Projeto_LSD/Deco_3bits/db/Deco_3bits.cbx.xml
+source_file = 1, C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Deco_3bits/Deco_3bits.vhdl
+source_file = 1, C:/Users/maria/OneDrive/Documentos/MMS/Maria/Github/Projeto_LSD/Deco_3bits/db/Deco_3bits.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
