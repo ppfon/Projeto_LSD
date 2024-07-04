@@ -9,7 +9,8 @@ ENTITY Controladora IS
 	comp_desejado_posicao : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 
 	load_andar_desejado, parado : OUT STD_LOGIC;
-	ordem_leds : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+	ordem_leds : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	estado_teste : out std_logic_vector(2 downto 0)
 	);
 END Controladora;
 
@@ -42,6 +43,7 @@ BEGIN
 				ordem_leds <= "100";
 				load_andar_desejado <= '1';
 				parado <= '1';
+				estado_teste <= "001";
 
 				IF (desejado_igual_0 = '0' AND estado_emergencia = '0') THEN
 					proximo_estado <= inicia_subindo;
@@ -55,10 +57,11 @@ BEGIN
 					ordem_leds <= '0' & andar_desejado;
 					load_andar_desejado <= '0';
 					parado <= '1';
+					estado_teste <= "010";
 
 				IF (flag_presenca = '0' AND estado_emergencia = '0') THEN
 					proximo_estado <= subindo;
-				elsif  (estado_emergencia = '0') then
+				elsif  (estado_emergencia = '0' AND flag_presenca = '1') then
 					proximo_estado <= inicia_subindo;
 				else
 					proximo_estado <= inicia_subindo;
@@ -69,6 +72,7 @@ BEGIN
 					ordem_leds <= '0' & andar_desejado;
 					load_andar_desejado <= '0';
 					parado <= '0';
+					estado_teste <= "011";
 
 				IF (comp_desejado_posicao = "010" AND flag_presenca = '0' AND estado_emergencia = '0') THEN
 					proximo_estado <= parado_andar;
@@ -82,6 +86,7 @@ BEGIN
 					ordem_leds <= "100";
 					load_andar_desejado <= '1';
 					parado <= '1';
+					estado_teste <= "100";
 
 				IF (desejado_igual_0 = '1') THEN
 					proximo_estado <= parado_andar;
@@ -97,6 +102,7 @@ BEGIN
 				ordem_leds <= '0' & andar_desejado;
 				load_andar_desejado <= '0';
 				parado <= '0';
+				estado_teste <= "101";
 			
 			if (flag_presenca = '1' AND estado_emergencia = '0') then
 				proximo_estado <= inicia_descendo;
@@ -108,6 +114,7 @@ BEGIN
 				ordem_leds <= '0' & andar_desejado;
 				load_andar_desejado <= '0';
 				parado <= '0';
+				estado_teste <= "110";
 			
 			if (comp_desejado_posicao = "010" AND flag_presenca = '0' AND estado_emergencia = '0') then
 				proximo_estado <= parado_andar;

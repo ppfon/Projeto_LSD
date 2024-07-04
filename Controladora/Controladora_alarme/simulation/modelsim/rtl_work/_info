@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\Controladora\Controladora_alarme\simulation\modelsim
+Econtroladora_alarme
+Z1 w1719884284
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\unknow\Documents\GitHub\Projeto_LSD\Controladora\Controladora_alarme\simulation\modelsim
+Z5 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/controladora_alarme.vhdl
+Z6 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/controladora_alarme.vhdl
+l0
+L7
+VU]]^RQ<d>H4a>>^kMdZCW3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1720056066.609000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/controladora_alarme.vhdl|
+Z10 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/controladora_alarme.vhdl|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 NaG5CEFNVFI^bmdH1S0F>0
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 19 controladora_alarme 0 22 U]]^RQ<d>H4a>>^kMdZCW3
+l22
+L17
+VQlJ;H]kj>SOX5e=^<alT52
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 aYVM:U6Q^TcVL`4GSI;853
+!i10b 1
+Etb_controladora_alarme
+Z13 w1720056030
+R2
+R3
+R4
+Z14 8C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/tb_Controladora_alarme.vhdl
+Z15 FC:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/tb_Controladora_alarme.vhdl
+l0
+L4
+V0DY>^BZbYMEl?Ed5k3ciC0
+!s100 hfIkkd9jhboo]1gh8d?9;2
+R7
+31
+!i10b 1
+Z16 !s108 1720056066.690000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/tb_Controladora_alarme.vhdl|
+Z18 !s107 C:/Users/unknow/Documents/GitHub/Projeto_LSD/Controladora/Controladora_alarme/tb_Controladora_alarme.vhdl|
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 22 tb_controladora_alarme 0 22 0DY>^BZbYMEl?Ed5k3ciC0
+l33
+L7
+VdLXX>Z<W<Gn9_^P3GXhRG2
+!s100 =0UeYakKgd1Fe1CEFZFLj1
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12

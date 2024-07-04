@@ -32,5 +32,8 @@ parado <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 ordem_leds[0] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
 ordem_leds[1] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
 ordem_leds[2] <= ordem_leds.DB_MAX_OUTPUT_PORT_TYPE
+estado_teste[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+estado_teste[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+estado_teste[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Controladora_alarme
-Mon Jul 01 22:38:12 2024
+Wed Jul 03 22:10:20 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 01 22:38:12 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 03 22:10:20 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Controladora_alarme                             ;
 ; Top-level Entity Name              ; Controladora_alarme                             ;
@@ -233,7 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul 01 22:38:10 2024
+    Info: Processing started: Wed Jul 03 22:10:18 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Controladora_alarme -c Controladora_alarme
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file controladora_alarme.vhdl
@@ -247,8 +247,8 @@ Info (21057): Implemented 8 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Mon Jul 01 22:38:12 2024
+    Info: Peak virtual memory: 4657 megabytes
+    Info: Processing ended: Wed Jul 03 22:10:20 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
